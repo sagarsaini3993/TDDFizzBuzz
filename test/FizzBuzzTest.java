@@ -29,5 +29,12 @@ public class FizzBuzzTest {
 		String result = b.buzz(15);
 		assertEquals("fizzbuzz", result);
 	}
+	
+	@Test
+	public void testOtherNumber() {
+		FizzBuzz b = new FizzBuzz();
+		String result = b.buzz(4);
+		assertEquals("4", result);
+	}
 
 }
