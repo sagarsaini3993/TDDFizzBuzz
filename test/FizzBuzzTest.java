@@ -12,14 +12,14 @@ public class FizzBuzzTest {
 	@Test
 	public void testDivisibleBy3() {
 		FizzBuzz b = new FizzBuzz();
-		String result = b.buzz(3);
+		String result = b.buzz(27);
 		assertEquals("fizz", result);
 	}
 	
 	@Test
 	public void testDivisibleBy5() {
 		FizzBuzz b = new FizzBuzz();
-		String result = b.buzz(5);
+		String result = b.buzz(10);
 		assertEquals("buzz", result);
 	}
 	
