@@ -11,8 +11,14 @@ public class FizzBuzz {
 		else if (num % 5 == 0) {
 			return "buzz";
 		}
+		
+		else if(num % 3 == 0) {
+			return "fizz";
+		}
+		
+		return String.valueOf(num);
 		 
-		return "fizz";
 	}
+	
 
 }
