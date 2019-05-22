@@ -2,8 +2,7 @@
 public class FizzBuzz {
 	
 	
-	public String buzz(int num) {
-		
+	public boolean checkPrime(int num) {
 		
 		boolean isPrime = true;
 		for (int i = 2; i < num-1; i++) {
@@ -13,11 +12,17 @@ public class FizzBuzz {
 			}
 		}
 		
+		
+		return isPrime;
+	}
+	
+	
+	public String buzz(int num) {
+		boolean isPrime = checkPrime(num);
+		
 		if(isPrime == true) {
 			return "whizz";
 		}
-		
-		
 		if (num % 5 == 0 && num % 3 == 0) {
 			return "fizzbuzz";
 		}
