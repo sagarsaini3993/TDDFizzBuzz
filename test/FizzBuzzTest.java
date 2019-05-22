@@ -10,8 +10,10 @@ public class FizzBuzzTest {
 	}
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testDivisibleBy3() {
+		FizzBuzz b = new FizzBuzz();
+		String result = b.buzz(3);
+		assertEquals("fizz", result);
 	}
 
 }
