@@ -48,6 +48,7 @@ public class FizzBuzzTest {
 	public void testAppendWhizz() {
 		FizzBuzz b = new FizzBuzz();
 		String result = b.buzz(3);
+		assertEquals("fizzwhizz", result);
 		
 		result = b.buzz(5);
 		assertEquals("buzzwhizz", result);
