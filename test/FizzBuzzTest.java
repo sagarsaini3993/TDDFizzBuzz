@@ -43,5 +43,14 @@ public class FizzBuzzTest {
 		String result = b.buzz(11);
 		assertEquals("whizz", result);
 	}
+	
+	@Test
+	public void testAppendWhizz() {
+		FizzBuzz b = new FizzBuzz();
+		String result = b.buzz(3);
+		
+		result = b.buzz(5);
+		assertEquals("buzzwhizz", result);
+	}
 
 }
