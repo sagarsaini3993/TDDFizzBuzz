@@ -21,6 +21,11 @@ public class FizzBuzz {
 		boolean isPrime = checkPrime(num);
 		
 		if(isPrime == true) {
+			if (num % 3 == 0) {
+				return "fizzwhizz";
+			} else if (num % 5 == 0) {
+				return "buzzwhizz";
+			}
 			return "whizz";
 		}
 		if (num % 5 == 0 && num % 3 == 0) {
